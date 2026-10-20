@@ -1,0 +1,196 @@
+:root {
+  --graphite: #121315;
+  --graphite-raised: #1a1b1e;
+  --silver: #a4a6aa;
+  --silver-dim: #71747a;
+  --paper: #f4f4f1;
+  --signal-red: #ee0808;
+  background: var(--graphite);
+}
+
+body,
+.detail-page,
+.contact,
+.archive {
+  background: transparent;
+  color: var(--paper);
+}
+
+body {
+  background-color: var(--graphite);
+  background-image: none;
+}
+
+.hero,
+.about,
+.expertise {
+  background: transparent;
+  color: var(--paper);
+}
+
+.hero h1,
+.hero h1 strong,
+.about h2,
+.expertise h2,
+.contact h2,
+.detail-title h1,
+.project-listing-info,
+.category-index-card,
+.archive-intro h2,
+.archive-intro .archive-number,
+.detail-top,
+.detail-footer {
+  color: var(--paper);
+}
+
+.hero h1,
+.hero h1 strong {
+  color: var(--signal-red);
+}
+
+.hero-kicker,
+.archive-intro h2 span,
+.project-listing-category,
+.contact .eyebrow,
+.project-listing-number {
+  color: var(--signal-red);
+}
+
+.hero-kicker {
+  color: var(--silver);
+}
+
+.hero-kicker {
+  border-color: rgba(164, 166, 170, 0.62);
+}
+
+.hero-note,
+.message-link,
+.archive-intro > p:not(.archive-number),
+.category-index-card p,
+.project-listing-info > p:not(.project-listing-category),
+.detail-title > p:last-child,
+.detail-video figcaption,
+.contact-inner > div:last-child,
+.about-copy p,
+.strength-grid article p {
+  color: var(--silver);
+}
+
+.nav,
+.nav.is-floating {
+  border-color: rgba(255, 255, 255, 0.13);
+  background: rgba(24, 25, 28, 0.76);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.34);
+}
+
+.brand,
+.brand strong,
+.nav-links a,
+.nav-contact,
+.nav.is-floating .nav-contact {
+  color: var(--paper);
+}
+
+.nav-contact,
+.nav.is-floating .nav-contact {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.nav-contact:hover,
+.nav.is-floating .nav-contact:hover {
+  background: var(--signal-red);
+  border-color: var(--signal-red);
+  color: #fff;
+  box-shadow: 0 9px 22px rgba(238, 8, 8, 0.25);
+}
+
+.folder-card {
+  border-color: rgba(238, 238, 238, 0.82);
+}
+
+.folder-pocket {
+  background: linear-gradient(135deg, rgba(46, 48, 53, 0.78), rgba(18, 19, 21, 0.58));
+  border-color: rgba(235, 235, 235, 0.3);
+}
+
+.about,
+.expertise,
+.contact,
+.detail-top,
+.detail-footer,
+.category-index {
+  border-color: rgba(255, 255, 255, 0.17);
+}
+
+.archive-intro {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.category-index-cover,
+.project-listing-media,
+.detail-media > img,
+.detail-video video {
+  background: var(--graphite-raised);
+}
+
+.project-listing-info a,
+.back-link,
+.contact a {
+  color: var(--paper);
+  border-color: currentColor;
+}
+
+.project-listing-info a:hover,
+.back-link:hover,
+.contact a:hover,
+.nav-links a:hover,
+.message-link:hover {
+  color: var(--signal-red);
+}
+
+.category-index-card:hover .category-index-cover,
+.project-listing-media:hover {
+  box-shadow: 0 15px 30px rgba(238, 8, 8, 0.18);
+}
+
+.strength-grid,
+.strength-grid article,
+.detail-top,
+.detail-footer {
+  border-color: rgba(255, 255, 255, 0.17);
+}
+
+.detail-page .detail-title,
+.detail-page .detail-media {
+  color: var(--paper);
+}
+
+.contact h2,
+.contact h2 i {
+  color: var(--signal-red);
+}
+
+.contact .eyebrow,
+.contact a,
+.contact-inner > div:last-child,
+.contact-inner > div:last-child span {
+  color: var(--silver);
+}
+
+@media (min-width: 901px) {
+  .hero-artwork {
+    left: 68%;
+    top: 47%;
+    width: min(46vw, 720px);
+    height: min(38vw, 510px);
+  }
+}
+
+@media (max-width: 900px) {
+  .nav,
+  .nav.is-floating {
+    background: rgba(24, 25, 28, 0.88);
+  }
+}

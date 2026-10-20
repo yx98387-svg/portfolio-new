@@ -1,0 +1,127 @@
+/* Final alignment pass for the editorial landing page. */
+.hero h1,
+.hero h1 strong {
+  color: #090909;
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -0.09em;
+}
+
+.hero h1 {
+  line-height: 0.98;
+}
+
+.hero h1 strong {
+  display: block;
+  margin-top: 0.1em;
+}
+
+.archive-intro {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+:root {
+  --accent-lilac: #ee0808;
+  --accent-lilac-deep: #ee0808;
+}
+
+.hero-kicker,
+.archive-intro h2 span,
+.project-listing-category,
+.contact .eyebrow {
+  color: var(--accent-lilac-deep);
+}
+
+.nav-links a,
+.nav-contact,
+.message-link,
+.project-listing-media,
+.project-listing-info a,
+.category-index-card,
+.back-link,
+.contact a {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+.nav-links a:hover,
+.message-link:hover,
+.project-listing-info a:hover,
+.back-link:hover,
+.contact a:hover {
+  color: var(--accent-lilac-deep);
+}
+
+.nav-contact:hover {
+  background: var(--accent-lilac);
+  border-color: var(--accent-lilac);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(119, 105, 190, 0.24);
+}
+
+.category-index-card:hover {
+  transform: translateY(-6px);
+}
+
+.category-index-card:hover .category-index-cover,
+.project-listing-media:hover {
+  box-shadow: 0 14px 28px rgba(119, 105, 190, 0.2);
+}
+
+.project-listing-media:hover {
+  transform: translateY(-3px);
+}
+
+.detail-title h1 {
+  font-size: clamp(42px, 5.8vw, 96px);
+  line-height: 0.9;
+}
+
+.contact .eyebrow {
+  position: static;
+  display: block;
+  margin: 0 0 clamp(26px, 3vw, 44px);
+  color: #090909;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1;
+  transform: none;
+}
+
+.contact-inner {
+  padding-top: clamp(72px, 9vh, 118px);
+}
+
+@media (min-width: 901px) {
+  .message-link {
+    bottom: 7%;
+    left: 0;
+    right: auto;
+    top: auto;
+    width: 260px;
+  }
+
+  .hero-note {
+    bottom: 12%;
+    left: 0;
+    right: auto;
+    width: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+  .archive-intro {
+    border-radius: 0;
+  }
+
+  .detail-title h1 {
+    font-size: clamp(38px, 10vw, 64px);
+  }
+}

@@ -1,0 +1,44 @@
+/* Editorial motion layer: oversized type arrives first, content follows. */
+.hero-opening {
+  position: relative;
+}
+
+.hero-opening-mask {
+  position: absolute;
+  z-index: 4;
+  inset: -1px;
+  pointer-events: none;
+  background: var(--graphite, #101114);
+}
+
+.hero-title-line {
+  display: block;
+  overflow: visible;
+  will-change: transform, opacity;
+}
+
+.hero-opening .hero-artwork,
+.media-reveal {
+  will-change: transform, clip-path;
+}
+
+.media-reveal {
+  overflow: hidden;
+}
+
+.media-reveal img,
+.media-reveal video {
+  will-change: transform;
+}
+
+.kinetic-heading {
+  overflow: hidden;
+}
+
+.kinetic-heading > * {
+  will-change: transform, opacity, filter;
+}
+
+@media (max-width: 900px) {
+  .hero-opening-mask { inset: 0; }
+}

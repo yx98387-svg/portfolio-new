@@ -1,0 +1,24 @@
+{
+  "name": "wxy-ai-designer-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "gsap": "^3.15.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "jsdom": "latest",
+    "vitest": "latest"
+  }
+}

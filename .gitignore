@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.pnpm-store/
+.DS_Store
+*.log
+public/portfolio/ad-videos/冰泉豆花ai广告.mp4

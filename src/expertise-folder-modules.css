@@ -1,0 +1,85 @@
+/* Modular capability panel */
+.expertise {
+  margin-top: clamp(38px, 5vw, 74px);
+  margin-bottom: clamp(90px, 11vw, 170px);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(244, 244, 241, .17);
+  border-radius: 24px;
+  background: linear-gradient(132deg, rgba(43, 45, 52, .48), rgba(15, 16, 20, .7));
+  box-shadow: inset 0 1px rgba(255, 255, 255, .13), 0 26px 56px rgba(0, 0, 0, .2);
+  -webkit-backdrop-filter: blur(24px) saturate(125%);
+  backdrop-filter: blur(24px) saturate(125%);
+}
+
+.expertise-heading {
+  padding: clamp(34px, 5vw, 66px);
+  border-bottom: 1px solid rgba(244, 244, 241, .14);
+  background: radial-gradient(circle at 84% 30%, rgba(174, 19, 24, .2), transparent 35%);
+}
+
+.expertise .section-number { color: var(--signal-red); }
+.expertise h2 { max-width: 720px; margin: 16px 0 0; color: var(--paper); font-size: clamp(48px, 6vw, 92px); line-height: .9; }
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 16px;
+}
+
+.skill-grid article {
+  position: relative;
+  min-height: 260px;
+  padding: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(244, 244, 241, .15);
+  border-radius: 18px;
+  background: linear-gradient(140deg, rgba(57, 59, 66, .4), rgba(16, 17, 21, .66));
+  box-shadow: inset 0 1px rgba(255, 255, 255, .1);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  backdrop-filter: blur(18px) saturate(120%);
+}
+
+.skill-grid article span { color: var(--signal-red); font: 10px 'DM Mono', monospace; }
+.skill-grid article h3 { margin: 72px 0 15px; color: var(--paper); font-size: clamp(23px, 2vw, 31px); letter-spacing: -.06em; }
+.skill-grid article p { max-width: 260px; margin: 0; color: var(--silver); font-size: 13px; line-height: 1.75; }
+
+/* Glass file folder refinements */
+.hero-folder-composition { isolation: isolate; }
+.folder-tab {
+  position: absolute;
+  z-index: 2;
+  left: 8%;
+  bottom: 48%;
+  width: 36%;
+  height: 13%;
+  border: 1px solid rgba(235, 235, 235, .36);
+  border-bottom: 0;
+  border-radius: 22px 22px 0 0;
+  background: linear-gradient(125deg, rgba(92, 96, 104, .72), rgba(37, 39, 46, .65));
+  box-shadow: inset 0 1px rgba(255, 255, 255, .18);
+  -webkit-backdrop-filter: blur(14px) saturate(115%);
+  backdrop-filter: blur(14px) saturate(115%);
+}
+
+.folder-pocket {
+  z-index: 3;
+  bottom: 0;
+  height: 51%;
+  border-radius: 30px 30px 26px 26px;
+  background: linear-gradient(145deg, rgba(92, 95, 102, .74), rgba(24, 25, 30, .8));
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, .38), inset 0 24px 32px rgba(255, 255, 255, .05), 0 22px 34px rgba(0, 0, 0, .28);
+}
+
+.folder-pocket::after {
+  background: linear-gradient(112deg, rgba(255, 255, 255, .22), transparent 31%, rgba(255, 255, 255, .05) 68%, transparent 75%);
+}
+
+@media (max-width: 900px) {
+  .expertise { margin-top: 70px; margin-bottom: 86px; }
+  .skill-grid { grid-template-columns: 1fr; }
+  .skill-grid article { min-height: 185px; }
+  .skill-grid article h3 { margin-top: 38px; }
+  .folder-tab { border-radius: 16px 16px 0 0; }
+}

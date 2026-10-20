@@ -1,0 +1,2 @@
+@media(min-width:901px){.hero h1{top:40%;bottom:auto;max-width:480px;font-size:clamp(58px,5.9vw,98px);transform:translateY(-50%)}.message-link{top:57%;bottom:auto}.hero-artwork{width:min(40vw,620px);height:min(32vw,430px);left:63%;top:40%}}
+@media(max-width:900px){.hero h1{top:48%;bottom:auto;transform:translateY(-50%)}.message-link{top:65%;bottom:auto}.hero-artwork{left:63%;width:61vw;height:47vw}}

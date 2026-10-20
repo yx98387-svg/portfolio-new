@@ -1,0 +1,2 @@
+/* Give the directory index more deliberate, gallery-like breathing room on desktop. */
+@media(min-width:901px){.archive-intro{min-height:184px;padding-top:56px;padding-bottom:30px}.category-index{width:min(1180px,calc(100% - 190px));padding-top:86px;padding-bottom:98px;gap:24px}.category-index-card>span{margin-bottom:13px}.category-index-card h3{margin-top:14px}.archive-groups{padding-top:22px}}
