@@ -4,7 +4,9 @@ import AnimatedContent from './AnimatedContent'
 import HeroOpening from './HeroOpening'
 import MediaReveal from './MediaReveal'
 
-const range = (start, end) => Array.from({ length: end - start + 1 }, (_, index) => `/portfolio/${start + index}.png`)
+const webpPages = new Set([44, 49, 50, 51, 52])
+const portfolioPage = (number) => `/portfolio/${number}.${webpPages.has(number) ? 'webp' : 'png'}`
+const range = (start, end) => Array.from({ length: end - start + 1 }, (_, index) => portfolioPage(start + index))
 
 const dynamicPosters = [
   ['20260112-194457.mp4', '动态海报 / 01'], ['20260203 U吧U吧-元宵节播传.mp4', 'U 吧 U 吧 · 元宵节'], ['20260210 莎布蕾-除夕播传.mp4', '莎布蕾 · 除夕'], ['20260213 莎布蕾-初五播传.mp4', '莎布蕾 · 初五'], ['251230 朴鲜鲜-2025元旦-动态海报.mp4', '朴鲜鲜 · 元旦'], ['251230 U吧-2026元旦-视频.mp4', 'U 吧 · 元旦'], ['260119 U吧-2026春节初五-动态海报.mp4', 'U 吧 · 春节初五'], ['260119 U吧-2026春节初一-动态海报.mp4', 'U 吧 · 春节初一'], ['260119 U吧-2026春节除夕-动态海报.mp4', 'U 吧 · 春节除夕'], ['260119 U吧-2026开工-动态海报.mp4', 'U 吧 · 开工'], ['260304 U吧U吧-38妇女节-播传.mp4', 'U 吧 U 吧 · 妇女节'], ['260326 U吧U吧-愚人节-播传.mp4', 'U 吧 U 吧 · 愚人节'], ['260401 然利-2026清明节-动态海报.mp4', '然利 · 清明节'], ['飞书20260120-145427.mp4', '动态海报 / 14'], ['飞书20260120-145434.mp4', '动态海报 / 15'], ['飞书20260120-145439.mp4', '动态海报 / 16'], ['飞书20260128-114209.mp4', '动态海报 / 17'], ['海螺_视频_三个灯笼陆陆续续都从_472106128672333829 (1).mp4', '海螺 · 灯笼'], ['朴鲜鲜潘纳托妮宣传 (3).mp4', '朴鲜鲜潘纳托妮 / 01'], ['朴鲜鲜潘纳托妮宣传 (4).mp4', '朴鲜鲜潘纳托妮 / 02'], ['朴鲜鲜潘纳托妮宣传 (5).mp4', '朴鲜鲜潘纳托妮 / 03'], ['然利圣诞节.mp4', '然利 · 圣诞节'], ['然利新春.mp4', '然利 · 新春'], ['山姆先森-初五海报.mp4', '山姆先森 · 初五'], ['山姆先森-初一海报.mp4', '山姆先森 · 初一'], ['山姆先森-除夕海报.mp4', '山姆先森 · 除夕'], ['山姆先森-开工海报.mp4', '山姆先森 · 开工'], ['山姆先森-元宵海报.mp4', '山姆先森 · 元宵'], ['游世家族 (1).mp4', '游世家族'],
@@ -28,14 +30,14 @@ const portfolioGroups = [
       {
         id: 'puxian-panettone', number: '05', title: '朴鲜鲜潘娜托妮宣传视频', en: 'PUXIAN PANETTONE / CAMPAIGN',
         pages: range(43, 45), cover: '/portfolio/43.png',
-        videos: [{ src: '/portfolio/puxian-panettone.mp4', label: '朴鲜鲜潘娜托妮播传' }],
+        videos: [{ src: '/portfolio/puxian-panettone-web.mp4', label: '朴鲜鲜潘娜托妮播传' }],
       },
       { id: 'liurun-migration', number: '06', title: '刘润动物大迁徙倒计时', en: 'LIURUN / ANIMAL MIGRATION', pages: range(46, 49), cover: '/portfolio/46.png' },
       { id: 'ai-detail', number: '07', title: 'AI 详情页设计', en: 'AI COMMERCE / DETAIL PAGE', pages: range(50, 52), cover: '/portfolio/50.png' },
       {
         id: 'other-ad-films', number: '08', title: '其他广告视频', en: 'AI COMMERCIAL FILMS', pages: [], cover: '/portfolio/sam-invitation-cover.png',
         videos: [
-          { src: '/portfolio/ad-videos/冰泉豆花ai广告-web.mp4', label: '冰泉豆花 AI 广告' },
+          { src: '/portfolio/ad-videos/冰泉豆花ai广告-cf.mp4', label: '冰泉豆花 AI 广告' },
           { src: '/portfolio/ad-videos/丹夫IP播传.mp4', label: '丹夫 IP 播传' },
           { src: '/portfolio/ad-videos/山姆邀请函广告.mp4', label: '山姆邀请函广告' },
         ],
