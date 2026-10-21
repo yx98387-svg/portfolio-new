@@ -26,6 +26,7 @@ import './portfolio-modules.css'
 import './cinematic-motion.css'
 import './expertise-folder-modules.css'
 import './category-folders.css'
+import './hero-frosted-folder.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
