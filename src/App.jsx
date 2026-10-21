@@ -65,11 +65,24 @@ function PortfolioArchive({ onOpen }) {
       <AnimatedContent className="category-index shell" role="group" aria-label="作品分类目录" stagger={0.1} distance={42} blur={6}>
         {portfolioGroups.map((group, index) => {
           const cover = group.projects[0]
-          return <a className="category-index-card" href={`#${cover.id}`} key={group.id}>
-            <span>{String(index + 1).padStart(2, '0')}.</span>
-            <MediaReveal className="category-index-cover media-reveal">{cover.gallery && !cover.coverImage ? <video autoPlay muted loop playsInline preload="metadata" src={cover.cover} aria-label="" /> : <img src={cover.cover} alt="" />}</MediaReveal>
-            <h3>{group.label}</h3>
-            <p>{group.projects.length} 个项目</p>
+          return <a className="category-index-card category-folder" href={`#${cover.id}`} key={group.id} aria-label={`前往${group.label}的第一个项目`}>
+            <span className="category-folder-order">{String(index + 1).padStart(2, '0')}.</span>
+            <div className="category-folder-stage">
+              <span className="category-folder-tab" aria-hidden="true" />
+              <div className="category-folder-documents" aria-hidden="true">
+                <img className="category-folder-document category-folder-document-back" src={cover.cover} alt="" />
+                <img className="category-folder-document category-folder-document-middle" src={cover.cover} alt="" />
+                <img className="category-folder-document category-folder-document-front" src={cover.cover} alt="" />
+              </div>
+              <div className="category-folder-pocket">
+                <div>
+                  <h3>{group.label}</h3>
+                  <p>{group.note}</p>
+                </div>
+                <span className="category-folder-open" aria-hidden="true">↗</span>
+              </div>
+            </div>
+            <span className="category-folder-count">{group.projects.length} 个项目</span>
           </a>
         })}
       </AnimatedContent>

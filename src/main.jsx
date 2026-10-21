@@ -25,6 +25,7 @@ import './profile-modules.css'
 import './portfolio-modules.css'
 import './cinematic-motion.css'
 import './expertise-folder-modules.css'
+import './category-folders.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
