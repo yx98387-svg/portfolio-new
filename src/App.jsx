@@ -14,18 +14,6 @@ const dynamicPosters = [
 
 const portfolioGroups = [
   {
-    id: 'brand', label: '品牌类', note: 'BRAND IDENTITY', projects: [
-      { id: 'fruit-order', number: '01', title: '果序香水品牌设计', en: 'FRUIT ORDER / BRAND IDENTITY', pages: ['/portfolio/fruit-order-cover.png', ...range(5, 14)], cover: '/portfolio/fruit-order-cover.png' },
-    ],
-  },
-  {
-    id: 'ip', label: 'IP类', note: 'CHARACTER & EVENT', projects: [
-      { id: 'yueshihu', number: '02', title: '悦食虎 IP 设计', en: 'YUESHIHU / CHARACTER SYSTEM', pages: range(15, 24), cover: '/portfolio/15.png' },
-      { id: 'supply-station', number: '03', title: '松弛补给站活动设计', en: 'RELAXED SUPPLY STATION / EVENT', pages: range(26, 31), cover: '/portfolio/26.png' },
-      { id: 'xiaosong', number: '04', title: '小颂 IP 设计', en: 'XIAOSONG / CHARACTER DESIGN', pages: range(32, 41), cover: '/portfolio/32.png' },
-    ],
-  },
-  {
     id: 'project', label: '项目类', note: 'CAMPAIGN & DIGITAL', projects: [
       {
         id: 'puxian-panettone', number: '05', title: '朴鲜鲜潘娜托妮宣传视频', en: 'PUXIAN PANETTONE / CAMPAIGN',
@@ -47,6 +35,18 @@ const portfolioGroups = [
   {
     id: 'poster', label: '海报类', note: 'MOTION POSTER', projects: [
       { id: 'motion-poster-gallery', number: '09', title: '动态海报画廊', en: 'MOTION POSTER GALLERY', gallery: true, cover: '/portfolio/motion-poster-cover.png', coverImage: true, pages: [] },
+    ],
+  },
+  {
+    id: 'ip', label: 'IP类', note: 'CHARACTER & EVENT', projects: [
+      { id: 'yueshihu', number: '02', title: '悦食虎 IP 设计', en: 'YUESHIHU / CHARACTER SYSTEM', pages: range(15, 24), cover: '/portfolio/15.png' },
+      { id: 'supply-station', number: '03', title: '松弛补给站活动设计', en: 'RELAXED SUPPLY STATION / EVENT', pages: range(26, 31), cover: '/portfolio/26.png' },
+      { id: 'xiaosong', number: '04', title: '小颂 IP 设计', en: 'XIAOSONG / CHARACTER DESIGN', pages: range(32, 41), cover: '/portfolio/32.png' },
+    ],
+  },
+  {
+    id: 'brand', label: '品牌类', note: 'BRAND IDENTITY', projects: [
+      { id: 'fruit-order', number: '01', title: '果序香水品牌设计', en: 'FRUIT ORDER / BRAND IDENTITY', pages: ['/portfolio/fruit-order-cover.png', ...range(5, 14)], cover: '/portfolio/fruit-order-cover.png' },
     ],
   },
 ]
